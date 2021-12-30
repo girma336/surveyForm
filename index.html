@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">  
+        <div class="head">
+      <div class="logo">
+          <img src="image/logo.png" alt="">
+      </div>
+      <div class="link-bar">
+          <ul>
+             <li><a href="#"><i class="fa fa-heart"></i></a></li>
+             <li><a href="#">View in Editor</a></li>
+             <li class="hover"><a href="#">Sign Up</a></li>
+             <li><a href="#">Log in</a></li>
+         </ul>
+      </div>    
+  </div>
+</div>
+<div class="tabs">
+    <div class="bars-tab">
+    <i class="fa fa-bars"></i>
+</div>
+<div class="close-tab">
+    <div class="new-button">
+        <i class="fa fa-close"></i>
+           <p>Select Test Suite:</p>
+           <form action="#"> 
+               
+               <input type="text" value="Tribute Page">
+               <i class="fa fa-sort-down"></i>
+            <div class="h-button">
+                <div class="h-button-1">
+                    <button>Run Tests</button>
+                    <button>Tests</button>
+                </div>
+
+                <div class="h-button-2">
+                    <ul>
+                        <li class="red">Test(s) Failed</li>
+                        <li class="green">Test passed</li>
+                        <li class="orange">Test Executing</li>
+                    </ul>
+                </div>
+                
+            </div>
+  
+            </form>
+                  <div class="a">
+                <a href="#" class="last-a"> Ask For Help</a>
+            </div>
+              
+       </div>
+</div>
+</div>
+<div class="wrapper">
+<div id="body-content">
+    <div id="title-body">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div id="form">
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" required placeholder="Name">
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" required  placeholder="Email@gmail.com">
+
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" required min="18" max="50" placeholder="Age">
+
+        <label for="" id="dropdown-label">Which option best describes your current role?</label>
+        <select name="role" id="dropdown">
+         <option value="">Select current role</option>
+         <option value="">Student</option>
+         <option value="">Full Time Job</option>
+         <option value="">Full Time Learner</option>
+         <option value="">Other</option>
+        </select>
+         
+        <label for="radio" id="radio-button">Would you recommend freeCodeCamp to a friend?</label>
+
+        <div class="radio-b">       
+              <input type="radio" id="radio" checked> 
+              <label for="radio">Definitely</label> 
+         </div> 
+           
+        <div class="radio-b">  
+           <input type="radio" id="radio">
+           <label for="radio">Maybe</label>
+        </div> 
+
+        <div class="radio-b"> 
+            <input type="radio" id="radio">
+            <label for="radio">Not sure</label> 
+        </div>
+
+         <label for="" id="dropdown-label">What is your favorite feature of freeCodeCamp?</label>
+         <select name="role" id="dropdown">
+          <option value="">Select an option</option>
+          <option value="">Challenges</option>
+          <option value="">Project</option>
+          <option value="">Open Source</option>
+          <option value="">Other</option>
+         </select>
+
+        <div>
+         <label for="radio" id="checkbox-button">What would you like to see improved? <span>(Check all that apply)</span> </label>
+        </div> 
+        <div class="radio-b">
+             <input type="checkbox" id="checkbox"> 
+             <label for="checkbox">Front-end Projects</label> 
+         </div>  
+         <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">Back-end Projects</label> 
+        </div> 
+        <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">Data Visualization</label> 
+        </div> 
+        <div  class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">Challenges</label> 
+        </div> 
+
+           <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">Open Source Community</label> 
+        </div> 
+        <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">Gitter help rooms</label> 
+        </div> 
+        <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox"> Videos</label> 
+        </div>
+        <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">City Meetups</label> 
+        </div> 
+        <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">Wiki</label> 
+        </div> 
+        <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">Forum</label> 
+        </div> 
+        <div class="radio-b">
+            <input type="checkbox" id="checkbox"> 
+            <label for="checkbox">Additional Courses</label> 
+        </div> 
+           <div class="radio-b"> 
+            <label for="text" id="text-label">Any comments or suggestions?</label>
+        <textarea name="text" id="text-area" cols="30" rows="10"></textarea>
+           </div>
+        <button id="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+</div>
+
+<script src="script.js"></script>    
+</body>
+</html>

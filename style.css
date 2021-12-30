@@ -1,0 +1,325 @@
+   
+
+
+      *{
+          margin:0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+
+      body{
+          position: relative;
+          background: #fff;
+          background-image: url('image/background.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment:fixed ;
+          background-color: rgb(76, 76, 243);
+          background-blend-mode:screen;
+          
+      }
+
+
+      .header{
+         position: fixed;
+         left: 0;
+         top: 0;
+         right: 0;
+         height: 60px;
+         background: black;
+         z-index: 1;
+         }
+
+         .head{
+             
+            
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+             text-align: center;   
+         }
+         .header ul, .link-bar a{
+             list-style-type: none;
+             text-decoration: none;
+         }
+         .header ul li{
+             padding: 5px;
+             margin: 2px;
+             font-size: 16px;
+             border: 1px solid rgb(62, 60, 66);
+             border-radius: 7px;    
+         }
+         .head .logo img{
+             width: 100%;
+             height: 55px;
+             border-radius: 40%;
+         }
+
+         .head .link-bar ul{
+             display: flex;
+             justify-content: space-between;
+         }
+          
+         .head .link-bar ul a{
+             color: #fff;
+         }
+         .head .link-bar ul .hover{
+            background: rgb(63, 201, 21);
+        }
+        .head li:hover{
+            background: rgb(63, 201, 21);
+            opacity: 0.7;
+        }
+
+        /*  body*/
+
+        .bars-tab{
+            position: fixed;
+            top: 50px;
+            margin: 10px 0 0 20px;
+            font-size: 30px;
+            color: rgb(81, 102, 75);
+            opacity: 0.7; 
+           
+            padding: 8px;
+            border-radius: 7px;
+            z-index: 1;
+        }
+        .bars-tab:hover{
+            color: rgb(67, 238, 10);
+            background: rgb(199, 221, 138);
+        }
+
+        /* close tab*/
+
+        .close-tab{
+            position: fixed;
+            width: 340px;
+            background: rgb(40, 192, 154);
+            border-bottom-right-radius: 8px;
+            display: none;
+            z-index: 2;
+            top: 60px;
+        }
+
+        .close-tab  i.fa-close{
+            margin: 10px 0 0 10px;
+            font-size: 30px;
+            color: rgb(42, 109, 22);
+           z-index: 3;
+        }
+        .fa-close:hover{
+  color: antiquewhite;
+  
+        }
+
+        .close-tab p{
+            font-size: 30px;
+            padding: 0 0 5px 0;
+            text-align: center;
+            margin: -30px 0 0 0;
+        }
+
+        .close-tab form input[type="text"]{
+          width: 90%;
+          padding: 2px;
+          margin: 10px -20px 0 10px;
+          border-radius: 5px;
+        }
+        .close-tab .h-button{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+          .h-button-1 {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-direction: column;
+        }
+        .h-button-1 button{
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 3px;
+            border:1px solid rgb(63, 201, 21);
+            border-radius: 6px;
+            box-shadow: 4px 0 9px rgb(55, 85, 46);
+            font-size: 18px;
+        }
+        .h-button-1 button:first-child{
+            background: rgb(55, 85, 46);
+            color: #ccc;
+        }
+        .h-button-1 button:last-child{
+            background: rgb(125, 134, 122);
+            color: #ccc;
+        }
+        .h-button-2 li{
+            list-style: none;
+            font-size: 16px;
+        }
+        .h-button-2 li::before{
+            content: "\25AA  ";
+            font-size: 30px;
+            margin-left: -2em;
+            width: 2em;
+        }
+        .h-button-2 li:first-child:before{
+           color:red;
+       }
+       .h-button-2 li:before{
+           color:green;
+       }
+       .h-button-2 li:last-child:before{
+           color:orange;
+       }
+        .a a.last-a{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            left: 50%;
+            justify-content: center;
+            color: black;
+            margin: 10px;
+            font-size: 18px;
+       }
+
+         #body-content{
+             position: absolute;
+             display: flex;
+            top: 70px;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column; 
+             margin: auto;
+         }
+
+         #title{
+             text-align: center;
+             padding: 50px 8px 8px 10px;
+             margin: 10px 0 0 10px;
+             text-align: center;
+             align-items: center;    
+         }
+         #description{
+             font-size: 20px;
+             text-align: center;
+             padding: 2px 0 10px 0;
+             margin: 0 0 20px 0px;
+
+         }
+         #form{
+             display: flex;
+             background: rgb(70, 57, 105);
+            max-width: 600px;
+             margin: auto;
+             border-radius: 15px;
+         }
+        form {
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+           color: white;
+            justify-content: center;
+           
+         }
+        #name-label,#email-label,#number-label,
+        #dropdown-label,
+        #radio-button,
+        #checkbox-button,
+        #text-label
+        {
+             width: 100%;
+             font-size: 20px;
+             float: left;
+             margin: 10px 0 0 30px ;
+         }
+         span{
+             font-size: 16px;
+             font-family: 'Courier New', Courier, monospace;
+         }
+         input[type=text] {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0 0 30px;
+            box-sizing: border-box;
+            border-radius: 8px;
+          }
+          input[type=email] {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0 0 30px;
+            box-sizing: border-box;
+            border-radius: 8px;
+          }
+          input[type=number] {
+            width: 90%;
+            padding: 10px 10px;
+            margin: 8px 0 0 30px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-size: 20px;
+          }
+          #dropdown{
+            width: 90%;
+            padding: 10px 10px;
+            margin: 8px 0 0 30px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-size: 20px;
+          }
+          #dropdown-label,#radio-button{
+              padding: 10px 0 0 5px;  
+              font-size: 20px;
+          }
+          .radio-b label{
+              font-size: 20px;
+          }
+          
+          input[type=radio],input[type=checkbox]{
+              margin:8px 10px 0 30px; 
+              padding: 10px;
+              font-size: 40px;
+              width: 20px;
+              height: 20px;
+          }
+          
+          
+          .wrapper{
+              display: flex;
+             max-width:  600px;
+              margin: auto;
+             justify-content: center;
+             align-items: center;
+             color: white;
+          }
+          
+          #text-area{
+            width: 80%;
+            padding: 10px 10px;
+            margin: 8px 0 0 30px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-size: 20px;
+            height: 100px;
+          }
+          button{
+              width:80%;
+              padding: 10px 10px;
+              margin: 8px 0 20px 30px;
+              box-sizing: border-box;
+              border-radius: 8px;
+              font-size: 20px;
+              background: green;
+              box-shadow: 4px 5px 4px rgb(125, 134, 122);
+          }
+
+   @media  (min-width: 900px){
+       .wrapper{
+           max-width: 800px;
+       }
+       #form{
+           max-width: 800px;
+       }
+   }
